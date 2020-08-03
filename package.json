@@ -40,7 +40,7 @@
     "@material-ui/lab": "^1.0.0-alpha.9",
     "@wojtekmaj/react-daterange-picker": "^2.2.0",
     "add": "^2.0.6",
-    "axios": "^0.17.1",
+    "axios": "^0.18.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.3",
     "babel-loader": "^7.1.2",
