@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Error Render With Props: Should match snapshot 1`] = `
+<div
+  className="reporting-error-message"
+>
+  Props Erreur
+</div>
+`;
+
+exports[`Component Error Render Without Props: Should match snapshot 1`] = `
+<div
+  className="reporting-error-message"
+>
+  Erreur
+</div>
+`;

@@ -1,0 +1,12 @@
+{
+  "short_name": "EM",
+  "name": "Energy Management",
+  "icons": [
+    
+  ],
+  "start_url": "/#/",
+  "background_color": "#f6f9fc",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#485563"
+}

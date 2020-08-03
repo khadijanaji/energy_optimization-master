@@ -1,0 +1,17 @@
+.email-field {
+    &__root {
+        position: relative;
+    }
+    &__placeholder {
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+        z-index: 99;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__ruler {
+        color: #f8f8f8;
+        display: hidden;
+    }
+}

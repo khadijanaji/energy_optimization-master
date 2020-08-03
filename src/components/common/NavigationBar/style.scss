@@ -1,0 +1,300 @@
+@import '../../../style/colors.scss';
+
+// .MuiBackdrop-root-96{
+//   background: none !important;
+// }
+
+.bar {
+  width: 100%;
+  height: 70px;
+  padding-bottom: 15px;
+  background-color: #1D2B3C;
+  box-shadow: 0 2px 4px 0 rgba(188, 188, 188, 0.5);
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 12px;
+  &__logo {
+    padding-top: 14px;
+    height: 80%;
+    padding-left: 40px;
+    margin-right: 25px;
+  }
+  &__right{
+    padding: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    border-left: 1px solid var(--border-2);
+    width: 80px;
+    float: right;
+    &--icon {
+      img{vertical-align: middle;}
+
+    }
+  }
+  &__optimise{
+    padding: 8px;
+    padding-top:34px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    color: #54c08a;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+    border-left: 1px solid var(--border-2);
+    &--icon {
+      img{vertical-align: middle;}
+      display: inline-block;
+      display: inline;
+    }
+    &--text {
+      display: inline-block;
+      display: inline;  
+    }
+  }
+  &__item {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--ui-4);
+    padding: 10px;
+    margin-right: 10px;
+    line-height: 49px;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    &--count {
+      display: inline-block;
+      text-align: center;
+      background: var(--support-red);
+      padding: 3px 5px;
+      border-radius: 24px;
+      font-size: 10px;
+      color: var(--ui-4);
+      margin-left: 10px;
+      height: 25px;
+      &--text {
+        position: relative;
+        bottom: 14px;
+      }
+    }
+    &--selected {
+      font-weight: bold;
+      border-bottom: 4.5px solid var(--brand-2);
+      padding-bottom: 23px;
+      color: white !important;
+    }
+
+  }
+  &__logout-container {
+    height: 100%;
+    float: right;
+    text-align: right;
+    &__profil{
+      padding: 20px 40px 0 0;
+      text-align: left;
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: 500;
+      height: 100%;
+      &__logout{
+        color: #3B3B3B;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 21px;
+      }
+      &__mytasks{
+        color: #3B3B3B;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 21px;
+
+      }
+      &__info{
+        font-family: Roboto;
+
+        &__name{
+          font-weight: bold;
+          font-size: 12px;
+          color:#257BFE;
+        }
+        &__atelier{
+          color: #808080;
+          font-size:10px;
+        }
+        &__unite{
+          color: #808080;
+          font-size: 10px;
+          &__content{
+            display: inline-block;
+            &:hover &--tooltip{
+              visibility: visible;
+            }
+            &--tooltip{
+              visibility: hidden;
+              position: absolute;
+              background-color: var(--brand-5);
+              color: var(--ui-4);
+              z-index: 2;
+              left: 20%;
+              height: auto;
+              top: 10%;
+              padding: 4px;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+      &__menu{
+        cursor: pointer;
+        &--title{
+          color: #8092A5;
+          font-family: Roboto;
+          font-size: 14px;
+          line-height: 19px;
+          text-transform: capitalize;
+        }
+        &--icon {
+          vertical-align: -40%;
+        }
+      }
+      &__name{
+        padding-bottom: 4px;
+        &__value{
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: var(--ui-4);
+          text-transform: capitalize;
+        }
+      }
+      &__atelier{
+        &__label{
+          font-family: Roboto;
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 0.5px;
+          color: var(--text-3);
+          text-transform: uppercase;
+
+        }
+      }
+      &__unite{
+        &__label{
+          font-family: Roboto;
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 0.5px;
+          color: var(--text-3);
+          text-transform: uppercase;
+        }
+        &__content{
+          display: inline-block;
+          &:hover &--tooltip{
+            visibility: visible;
+          }
+          &--tooltip{
+            visibility: hidden;
+            position: absolute;
+            background-color: var(--brand-5);
+            color: var(--ui-4);
+            z-index: 2;
+            left: 70%;
+            width: 25%;
+            height: auto;
+            top: 10%;
+            padding: 4px;
+            border-radius: 4px;
+          }
+
+        }
+
+      }
+    }
+    &__help-icon{
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      padding-top: 18px;
+    }
+    &__notif {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 80px;
+      padding-top: 18px;
+      position: relative;
+      &__bull{
+        position: absolute;
+        padding-left: 43%;
+        height: 57%;
+      }
+      &__counter{
+        &__bull{
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          background: #1974fe;
+          padding: 0px 3px;
+          border-radius: 24px;
+          border: 1px solid #bbc6cc;
+          font-size: 9px;
+          color: var(--ui-2);
+          vertical-align: 100%;
+          margin-right: 22px;
+          margin-top: 3px;
+          font-weight: bold;
+
+
+          &--text {
+            position: relative;
+            bottom: 14px;
+          }
+        }
+      }
+    }
+    &__logout {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      border-left: 1px solid var(--border-2);
+      width: 80px;
+      padding-right: 24.6px;
+      padding-top: 12px;
+      &--icon {
+        img{vertical-align: middle;}
+
+      }
+    }
+  }
+   a{
+    cursor: pointer;
+    vertical-align: bottom;
+    text-decoration: none ;
+    text-align: center;
+    color: #8092A5;
+    padding: 22px ;
+    line-height: 51px;
+    &--selected{
+      font-weight: bold;
+    }
+    padding-bottom: 18px !important;
+  }
+}

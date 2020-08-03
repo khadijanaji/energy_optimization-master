@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Highcharts Render Verify that highcharts functions are called 1`] = `
+Array [
+  "container-id",
+  Object {
+    "axes": Array [],
+    "credits": Object {
+      "enabled": false,
+    },
+    "loading": Object {
+      "hideDuration": 1000,
+      "showDuration": 1000,
+      "style": Object {
+        "backgroundColor": "#263237",
+      },
+    },
+    "series": Array [
+      Object {
+        "data": Array [
+          1,
+        ],
+      },
+      Object {
+        "data": Array [
+          1,
+        ],
+      },
+    ],
+    "xAxis": Array [
+      Object {
+        "categories": Array [],
+      },
+    ],
+    "yAxis": Object {
+      "labels": Object {
+        "format": "{value}",
+      },
+      "title": "",
+    },
+  },
+]
+`;
+
+exports[`Component Highcharts Render With all props should render correctly 1`] = `
+<div
+  className="testClassName"
+  id="container-id"
+/>
+`;

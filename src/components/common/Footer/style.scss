@@ -1,0 +1,36 @@
+.footer{
+  width: 100%;
+  background-color: #485563;
+  padding: 0 40px 0;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  z-index: 1;
+  height: 54px;
+  padding-top: 2px;
+  &__txt1 {
+    text-align: left;
+    color: #ffffff;
+    padding-top: 20px;
+
+  }
+  &__txt2 {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 20px;
+
+  }
+  &__txt3 {
+    text-align: right;
+    color: #99abbe;
+    padding-top: 12px;
+    &__img {
+      height: 30px;
+      
+    }
+  }
+}

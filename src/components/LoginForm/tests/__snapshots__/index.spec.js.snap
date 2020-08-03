@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component LoginForm Render With error Props: Should match snapshot 1`] = `
+<div
+  className="login"
+>
+  <div
+    className="login__header"
+  >
+    <img
+      alt="logo"
+      className="login__header--logo"
+      src=""
+    />
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="login__text2"
+    >
+      Utilisez vos informations d’accès OCP pour accéder à l’application
+    </div>
+    <div
+      className="login__email"
+    >
+      <WithStyles(FormControl)
+        fullWidth={true}
+      >
+        <Field
+          component={[Function]}
+          id="login-email"
+          label="Identifiant/Email"
+          name="email"
+        />
+      </WithStyles(FormControl)>
+    </div>
+    <div
+      className="login__password"
+    >
+      <WithStyles(FormControl)
+        fullWidth={true}
+      >
+        <Field
+          InputProps={
+            Object {
+              "endAdornment": <WithStyles(InputAdornment)
+                position="end"
+                style={
+                  Object {
+                    "marginLeft": "-25px",
+                  }
+                }
+              >
+                <pure(RemoveRedEye)
+                  onClick={[Function]}
+                />
+              </WithStyles(InputAdornment)>,
+            }
+          }
+          component={[Function]}
+          id="login-password"
+          label="Password"
+          name="password"
+          type="password"
+        />
+      </WithStyles(FormControl)>
+    </div>
+    <div
+      className="login__button"
+    >
+      <Field
+        component={[Function]}
+        disabled={true}
+        id="LoginForm-SubmitButton"
+        name="submit"
+        type="submit"
+      >
+        CONNEXION
+      </Field>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Component LoginForm Render Without error Props: Should match snapshot 1`] = `
+<div
+  className="login"
+>
+  <div
+    className="login__header"
+  >
+    <img
+      alt="logo"
+      className="login__header--logo"
+      src=""
+    />
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="login__text2"
+    >
+      Utilisez vos informations d’accès OCP pour accéder à l’application
+    </div>
+    <div
+      className="login__email"
+    >
+      <WithStyles(FormControl)
+        fullWidth={true}
+      >
+        <Field
+          component={[Function]}
+          id="login-email"
+          label="Identifiant/Email"
+          name="email"
+        />
+      </WithStyles(FormControl)>
+    </div>
+    <div
+      className="login__password"
+    >
+      <WithStyles(FormControl)
+        fullWidth={true}
+      >
+        <Field
+          InputProps={
+            Object {
+              "endAdornment": <WithStyles(InputAdornment)
+                position="end"
+                style={
+                  Object {
+                    "marginLeft": "-25px",
+                  }
+                }
+              >
+                <pure(RemoveRedEye)
+                  onClick={[Function]}
+                />
+              </WithStyles(InputAdornment)>,
+            }
+          }
+          component={[Function]}
+          id="login-password"
+          label="Password"
+          name="password"
+          type="password"
+        />
+      </WithStyles(FormControl)>
+    </div>
+    <div
+      className="login__button"
+    >
+      <Field
+        component={[Function]}
+        disabled={false}
+        id="LoginForm-SubmitButton"
+        name="submit"
+        type="submit"
+      >
+        CONNEXION
+      </Field>
+    </div>
+  </form>
+</div>
+`;

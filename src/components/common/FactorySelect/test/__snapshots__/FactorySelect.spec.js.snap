@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component FactoyList Render With props: Should match snapshot 1`] = `
+<div
+  className="factory-drawer__menu"
+>
+  <div
+    className="factory-drawer__select-text"
+    onClick={[Function]}
+  >
+    Sélectionnez une usine
+  </div>
+  <div
+    id="factory-select-anchor"
+  />
+  <div
+    className="factory-drawer__icon"
+  >
+    <pure(ArrowDropDown)
+      onClick={[Function]}
+    />
+  </div>
+  <WithStyles(Menu)
+    anchorEl={null}
+    id="factory-select-menu"
+    onClose={[Function]}
+    open={false}
+  >
+    <WithStyles(MenuItem)
+      key="JFC2"
+      onClick={[Function]}
+    >
+      <a
+        className="factory-drawer__item"
+        href="#/undefined/JFC2"
+      >
+        JFC2
+      </a>
+    </WithStyles(MenuItem)>
+    <WithStyles(MenuItem)
+      key="JFC3"
+      onClick={[Function]}
+    >
+      <a
+        className="factory-drawer__item"
+        href="#/undefined/JFC3"
+      >
+        JFC3
+      </a>
+    </WithStyles(MenuItem)>
+    <WithStyles(MenuItem)
+      key="JFC4"
+      onClick={[Function]}
+    >
+      <a
+        className="factory-drawer__item"
+        href="#/undefined/JFC4"
+      >
+        JFC4
+      </a>
+    </WithStyles(MenuItem)>
+  </WithStyles(Menu)>
+</div>
+`;
+
+exports[`Component FactoyList Render Without props: Should match snapshot 1`] = `
+<div
+  className="factory-drawer__menu"
+>
+  <div
+    className="factory-drawer__select-text"
+    onClick={[Function]}
+  >
+    Sélectionnez une usine
+  </div>
+  <div
+    id="factory-select-anchor"
+  />
+  <div
+    className="factory-drawer__icon"
+  >
+    <pure(ArrowDropDown)
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

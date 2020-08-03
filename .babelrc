@@ -1,0 +1,9 @@
+{
+  "presets": ["react", "flow", ["env", {
+      "targets": {
+        "browsers": ["last 2 Chrome versions", "safari >= 7", "ie 11"]
+      }
+    }]],
+  "plugins": ["transform-flow-strip-types", "transform-object-rest-spread"],
+
+}

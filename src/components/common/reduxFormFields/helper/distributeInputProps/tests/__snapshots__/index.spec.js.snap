@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component distributeInputProps Render Children contain passed props: Should match snapshot 1`] = `
+<component
+  input={Object {}}
+  meta={
+    Object {
+      "error": true,
+      "invalid": true,
+      "touched": true,
+    }
+  }
+  other1="Other"
+  other2={Object {}}
+  value="Value"
+/>
+`;

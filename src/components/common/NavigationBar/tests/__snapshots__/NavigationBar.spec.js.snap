@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationBar /> should display the Navigation bar 1`] = `
+<NavigationBar
+  classes={
+    Object {
+      "accountIcon": "NavigationBar-accountIcon-1",
+      "icon": "NavigationBar-icon-5",
+      "menu": "NavigationBar-menu-2",
+      "menuItem": "NavigationBar-menuItem-3",
+      "menuItemInfo": "NavigationBar-menuItemInfo-4",
+      "rootPopup": "NavigationBar-rootPopup-6",
+    }
+  }
+/>
+`;

@@ -1,0 +1,47 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["react", "flowtype"],
+  "extends": ["eslint:all", "plugin:react/all", "plugin:flowtype/recommended"],
+  "rules": {
+    "linebreak-style": 0,
+    "indent": [2, 2],
+    "max-len": [2, 120],
+    "new-cap": 0,
+    "no-duplicate-imports": 0,
+    "no-extra-parens": [2, "functions"],
+    "no-magic-numbers": [2, { "ignore": [0, 1] }],
+    "no-ternary": 0,
+    "no-undefined": 0,
+    "one-var": [2, "never"],
+    "padded-blocks": [2, "never"],
+    "react/require-default-props": 0,
+    "react/forbid-component-props": [2, { "forbid": [] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-closing-bracket-location": [2, "line-aligned"],
+    "react/jsx-closing-tag-location": [0],
+    "react/jsx-curly-brace-presence": [0],
+    "react/require-optimization": 0,
+    "react/style-prop-object": 0,
+    "sort-keys": "off",
+    "sort-imports": "off",
+    "react/jsx-no-literals": 0,
+    "template-curly-spacing": "off",
+    "react/jsx-no-bind": [
+      2,
+      {
+        "allowArrowFunctions": true
+      }
+    ]
+  }
+}

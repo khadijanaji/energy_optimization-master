@@ -1,0 +1,21 @@
+{
+  "short_name": "My KPIs",
+  "name": "My KPIs",
+  "icons": [
+    {
+      "src": "/reporting-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/reporting-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/#/",
+  "background_color": "#f6f9fc",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#485563"
+}

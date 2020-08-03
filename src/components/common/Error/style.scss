@@ -1,0 +1,20 @@
+@import "../../../style/colors.scss";
+.reporting-error-message {
+  display: inline-block;
+  width: 90%;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  background-color: $text-color-danger; 
+  color: $header-text-color;
+}

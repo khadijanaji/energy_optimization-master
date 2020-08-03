@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should display the Footer 1`] = `
+<div
+  className="footer"
+>
+  <WithStyles(Grid)
+    container={true}
+    spacing={2}
+  >
+    <WithStyles(Grid)
+      item={true}
+      xs={true}
+    >
+      <div
+        className="footer__txt1"
+      >
+        © 2019 All rights reserved
+      </div>
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={true}
+    >
+      <div
+        className="footer__txt2"
+      >
+        Powered by OCP
+      </div>
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={true}
+    >
+      <div
+        className="footer__txt3"
+      >
+        <img
+          className="footer__txt3__img"
+        />
+      </div>
+    </WithStyles(Grid)>
+  </WithStyles(Grid)>
+</div>
+`;

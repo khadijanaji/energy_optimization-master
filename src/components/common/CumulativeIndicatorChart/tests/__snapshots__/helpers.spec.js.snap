@@ -1,0 +1,596 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component CumulativeIndicatorChart Helpers CumulativeIndicatorChart Helpers mapChartData Helper With Daily timeline, should call mapDailyChartData 1`] = `
+Object {
+  "chart": Object {
+    "pinchType": "xy",
+    "type": "spline",
+    "zoomType": "xy",
+  },
+  "plotOptions": Object {
+    "line": Object {
+      "dataLabels": Object {
+        "enabled": true,
+      },
+      "enableMouseTracking": false,
+    },
+  },
+  "series": Array [
+    Object {
+      "color": "#A8FBA8",
+      "dashStyle": "Dot",
+      "data": Array [
+        0,
+        6,
+        13,
+        19,
+        25,
+        31,
+        38,
+        44,
+        50,
+        56,
+        63,
+        69,
+        75,
+        81,
+        88,
+        94,
+        100,
+      ],
+      "name": "Objectif",
+    },
+    Object {
+      "data": Array [
+        0,
+        10,
+        30,
+        50,
+        78.5,
+        96.17,
+        123.45,
+      ],
+      "name": "Valeurs actuelles",
+    },
+  ],
+  "subtitle": Object {
+    "text": "subtitle",
+  },
+  "title": Object {
+    "text": "title",
+  },
+  "tooltip": Object {
+    "formatter": [Function],
+    "useHTML": true,
+  },
+  "xAxis": Object {
+    "categories": Array [
+      "7 h",
+      "8 h",
+      "9 h",
+      "10 h",
+      "11 h",
+      "12 h",
+      "13 h",
+      "14 h",
+      "15 h",
+      "16 h",
+      "17 h",
+      "18 h",
+      "19 h",
+      "20 h",
+      "21 h",
+      "22 h",
+      "23 h",
+      "0 h",
+    ],
+  },
+  "yAxis": Object {
+    "title": Object {
+      "text": "unit",
+    },
+  },
+}
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers CumulativeIndicatorChart Helpers mapChartData Helper With Monthly timeline, should call mapMonthlyChartData 1`] = `
+Object {
+  "chart": Object {
+    "pinchType": "xy",
+    "type": "spline",
+    "zoomType": "xy",
+  },
+  "plotOptions": Object {
+    "line": Object {
+      "dataLabels": Object {
+        "enabled": true,
+      },
+      "enableMouseTracking": false,
+    },
+  },
+  "series": Array [
+    Object {
+      "color": "#A8FBA8",
+      "dashStyle": "Dot",
+      "data": Array [
+        4161,
+        8323,
+        12484,
+        16645,
+        20806,
+        24968,
+        29129,
+        33290,
+        37452,
+        41613,
+        45774,
+        49935,
+        54097,
+        58258,
+        62419,
+        66581,
+        70742,
+        74903,
+      ],
+      "name": "Objectif",
+    },
+    Object {
+      "data": Array [
+        10,
+        40,
+        90,
+        168.5,
+        264.67,
+        388.12,
+      ],
+      "name": "Valeurs actuelles",
+    },
+  ],
+  "subtitle": Object {
+    "text": "subtitle",
+  },
+  "title": Object {
+    "text": "title",
+  },
+  "tooltip": Object {
+    "formatter": [Function],
+    "useHTML": true,
+  },
+  "xAxis": Object {
+    "categories": Array [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+    ],
+  },
+  "yAxis": Object {
+    "title": Object {
+      "text": "unit",
+    },
+  },
+}
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers CumulativeIndicatorChart Helpers mapChartData Helper With Yearly timeline, should call mapYearlyChartData 1`] = `
+Object {
+  "chart": Object {
+    "pinchType": "xy",
+    "type": "column",
+    "zoomType": "xy",
+  },
+  "plotOptions": Object {
+    "line": Object {
+      "dataLabels": Object {
+        "enabled": true,
+      },
+      "enableMouseTracking": false,
+    },
+  },
+  "series": Array [
+    Object {
+      "color": "#A8FBA8",
+      "dashStyle": "Dot",
+      "data": Array [
+        1350,
+        3000,
+        5012,
+        7850,
+        9617,
+        12345,
+      ],
+      "name": "Objectif",
+    },
+    Object {
+      "data": Array [
+        10,
+        30,
+        50,
+        78.5,
+        96.17,
+        123.45,
+      ],
+      "name": "Valeurs actuelles",
+    },
+  ],
+  "subtitle": Object {
+    "text": "subtitle",
+  },
+  "title": Object {
+    "text": "title",
+  },
+  "tooltip": Object {
+    "formatter": [Function],
+    "useHTML": true,
+  },
+  "xAxis": Object {
+    "categories": Array [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+    ],
+  },
+  "yAxis": Object {
+    "title": Object {
+      "text": "unit",
+    },
+  },
+}
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers CumulativeIndicatorChart Helpers mapMonthlyChartData Helper With Correct params, should match snapshot 1`] = `
+Object {
+  "chart": Object {
+    "pinchType": "xy",
+    "type": "spline",
+    "zoomType": "xy",
+  },
+  "plotOptions": Object {
+    "line": Object {
+      "dataLabels": Object {
+        "enabled": true,
+      },
+      "enableMouseTracking": false,
+    },
+  },
+  "series": Array [
+    Object {
+      "color": "#A8FBA8",
+      "dashStyle": "Dot",
+      "data": Array [
+        4161,
+        8323,
+        12484,
+        16645,
+        20806,
+        24968,
+        29129,
+        33290,
+        37452,
+        41613,
+        45774,
+        49935,
+        54097,
+        58258,
+        62419,
+        66581,
+        70742,
+        74903,
+      ],
+      "name": "Objectif",
+    },
+    Object {
+      "data": Array [
+        10,
+        40,
+        90,
+        168.5,
+        264.67,
+        388.12,
+      ],
+      "name": "Valeurs actuelles",
+    },
+  ],
+  "subtitle": Object {
+    "text": "subtitle",
+  },
+  "title": Object {
+    "text": "title",
+  },
+  "tooltip": Object {
+    "formatter": [Function],
+    "useHTML": true,
+  },
+  "xAxis": Object {
+    "categories": Array [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+    ],
+  },
+  "yAxis": Object {
+    "title": Object {
+      "text": "unit",
+    },
+  },
+}
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers getActualTarget Helper With Correct params, should match snapshot 1`] = `75.1`;
+
+exports[`Component CumulativeIndicatorChart Helpers getDaysOfMonth Helper With Correct params, should match snapshot 1`] = `
+Array [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+]
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers getGapBetweenActualAndTargetValue Helper With Correct params, should match snapshot 1`] = `-26.749999999999986`;
+
+exports[`Component CumulativeIndicatorChart Helpers getGapPercent Helper With Correct params, should match snapshot 1`] = `-17.809587217043934`;
+
+exports[`Component CumulativeIndicatorChart Helpers getGravityClassName Helper With value superior to target, should return ok className 1`] = `"cumulative-indicator-chart__container__value__OK"`;
+
+exports[`Component CumulativeIndicatorChart Helpers getGravityClassName Helper With value under target, should return danger className 1`] = `"cumulative-indicator-chart__container__value__DANGER"`;
+
+exports[`Component CumulativeIndicatorChart Helpers getHoursFromRecordBeginningToCurrentHour Helper After midnight, should match snapshot 1`] = `
+Array [
+  "7 h",
+  "8 h",
+  "9 h",
+  "10 h",
+  "11 h",
+  "12 h",
+  "13 h",
+  "14 h",
+  "15 h",
+  "16 h",
+  "17 h",
+  "18 h",
+  "19 h",
+  "20 h",
+  "21 h",
+  "22 h",
+  "23 h",
+  "0 h",
+  "1 h",
+  "2 h",
+  "3 h",
+  "4 h",
+  "5 h",
+]
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers getHoursFromRecordBeginningToCurrentHour Helper With Correct params, should match snapshot 1`] = `
+Array [
+  "7 h",
+  "8 h",
+  "9 h",
+  "10 h",
+  "11 h",
+  "12 h",
+  "13 h",
+  "14 h",
+  "15 h",
+  "16 h",
+  "17 h",
+  "18 h",
+  "19 h",
+]
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers getMonthsOfThisYear Helper With Correct params, should match snapshot 1`] = `
+Array [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+]
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers getTargetsFromRecordBeginningToCurrentDay Helper With Correct params, should match snapshot 1`] = `
+Array [
+  4300,
+  8600,
+  12900,
+  17200,
+  21500,
+  25800,
+  30100,
+  34400,
+  38700,
+  43000,
+  47300,
+  51600,
+  55900,
+  60200,
+]
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers getTargetsFromRecordBeginningToCurrentHour Helper With Correct params, should match snapshot 1`] = `
+Array [
+  0,
+  6,
+  13,
+  19,
+  25,
+  31,
+  38,
+  44,
+  50,
+  56,
+  63,
+  69,
+  75,
+]
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers getTargetsFromRecordBeginningToCurrentMonth Helper With Correct params, should match snapshot 1`] = `
+Array [
+  1350,
+  3000,
+  5012,
+  7850,
+  9617,
+  12345,
+]
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers getTodayProductionHours Helper With Correct params, should match snapshot 1`] = `13`;
+
+exports[`Component CumulativeIndicatorChart Helpers mapDailyChartData Mapper With Correct params, should match snapshot 1`] = `
+Object {
+  "chart": Object {
+    "pinchType": "xy",
+    "type": "spline",
+    "zoomType": "xy",
+  },
+  "plotOptions": Object {
+    "line": Object {
+      "dataLabels": Object {
+        "enabled": true,
+      },
+      "enableMouseTracking": false,
+    },
+  },
+  "series": Array [
+    Object {
+      "color": "#A8FBA8",
+      "dashStyle": "Dot",
+      "data": Array [
+        0,
+        6,
+        13,
+        19,
+        25,
+        31,
+        38,
+        44,
+        50,
+        56,
+        63,
+        69,
+        75,
+      ],
+      "name": "Objectif",
+    },
+    Object {
+      "data": Array [
+        0,
+        10,
+        30,
+        50,
+        78.5,
+        96.17,
+        123.45,
+      ],
+      "name": "Valeurs actuelles",
+    },
+  ],
+  "subtitle": Object {
+    "text": "subtitle",
+  },
+  "title": Object {
+    "text": "title",
+  },
+  "tooltip": Object {
+    "formatter": [Function],
+    "useHTML": true,
+  },
+  "xAxis": Object {
+    "categories": Array [
+      "7 h",
+      "8 h",
+      "9 h",
+      "10 h",
+      "11 h",
+      "12 h",
+      "13 h",
+      "14 h",
+      "15 h",
+      "16 h",
+      "17 h",
+      "18 h",
+      "19 h",
+    ],
+  },
+  "yAxis": Object {
+    "title": Object {
+      "text": "unit",
+    },
+  },
+}
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers renderValue Render With correct data, should render value 1`] = `"123.450"`;
+
+exports[`Component CumulativeIndicatorChart Helpers renderValue Render With incorrect value, should render N/A 1`] = `
+<span
+  className="cumulative-indicator-chart__container__value__UNAVAILABLE"
+>
+  Donnée non disponible
+</span>
+`;
+
+exports[`Component CumulativeIndicatorChart Helpers renderValue Render With loading status, should render loader 1`] = `
+<img
+  alt="chargement"
+  className="category-indicator-item__loading"
+  src=""
+/>
+`;
