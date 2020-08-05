@@ -7,6 +7,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Input from '@material-ui/core/Input';
 
 const styles = theme => ({
     root: {
@@ -42,13 +43,11 @@ function SimpleTable(props) {
         const element = event.target;
         const name = element.name;
         const value = element.value;
-        console.log("value of ", name, " is ", value)
         props.functionHandle(name, value);
     }
 
     return (
-        <Paper className={classes.root}>
-            <Table className={classes.table}>
+            <Table>
                 <TableHead>
                     <TableRow>
                         <TableCell></TableCell>
@@ -67,8 +66,9 @@ function SimpleTable(props) {
                                 </TableCell>
                                 <TableCell numeric>{props.dataInit[row.id-1]} {row.measure}</TableCell>
                                 <TableCell numeric>
-                                    <input type="number" name={row.idValue} id={row.idValue}
-                                           placeholder="saiser une valeur"
+                                    <Input type="number" name={row.idValue} id={row.idValue}
+                                           placeholder="saisir une valeur"
+                                           className={"formControl"}
                                            onChange={changeData}
                                     />
                                 </TableCell>
@@ -79,8 +79,6 @@ function SimpleTable(props) {
 
                 </TableBody>
             </Table>
-
-        </Paper>
     );
 }
 

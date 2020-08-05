@@ -14,25 +14,26 @@ import {runWithAdal} from "reactjs-adal-adfs";
 
 
 import {authContext} from "./adalConfig";
+
 const history = syncHistoryWithStore(hashHistory, store);
 const piwikHistory = piwik.connectToHistory(history);
 if (module.hot) {
-    module.hot.accept();
+  module.hot.accept();
 }
 
 ReactDOM.render(
-    <Provider store={store}>
-        <PersistGate
-            loading={"Loading..."}
-            persistor={persistor}
-        >
-            <Router
-                history={piwikHistory}
-                routes={routes}
-            />
-        </PersistGate>
-    </Provider>,
-    document.getElementById("root")
+  <Provider store={store}>
+    <PersistGate
+      loading={"Loading..."}
+      persistor={persistor}
+    >
+      <Router
+        history={piwikHistory}
+        routes={routes}
+      />
+    </PersistGate>
+  </Provider>,
+  document.getElementById("root")
 );
 
 /*

@@ -69,6 +69,7 @@
     "node-modules": "^1.0.1",
     "piwik-react-router": "^0.12.1",
     "react": "^16.2.0",
+    "react-bootstrap-dialog": "^0.13.0",
     "react-dom": "^16.2.0",
     "react-intl": "^2.8.0",
     "react-modal": "^3.11.2",

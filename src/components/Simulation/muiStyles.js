@@ -100,7 +100,12 @@ export const styles = () => ({
     "background-color": "#cee6f9"
   },
   "title": {"fontSize": "14"},
-  "pos": {"marginBottom": "12"}
+  "pos": {"marginBottom": "12"},
+  "modalTitle": {
+    "color": "#ffffff",
+    "background-color": "#c2c2c2",
+  },
+  "modalFooter": {"background-color": "#f7f7f7"}
 });
 const customStyles = {
   content : {
