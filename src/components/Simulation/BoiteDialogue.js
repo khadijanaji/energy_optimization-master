@@ -48,7 +48,7 @@ class BoiteDialogue extends Component<Props, State> {
           onClick={this.handleClickOpen}
         >Lancer Simulation</Button>
         <Dialog
-            maxWidth='lg'
+            maxWidth='md'
           aria-labelledby="form-dialog-title"
           onClose={this.handleClose}
           open={this.state.open}
@@ -63,6 +63,7 @@ class BoiteDialogue extends Component<Props, State> {
           </DialogContent>
           <DialogActions className={classes.modalFooter}>
             <Button
+                boxshadow={0}
               className={"textPrimary"}
               color="default"
               onClick={this.handleClose}
@@ -71,6 +72,7 @@ class BoiteDialogue extends Component<Props, State> {
               Annuler
             </Button>
             <Button
+                boxshadow={0}
               color="primary"
               onClick={this.handleClose}
               variant="contained"

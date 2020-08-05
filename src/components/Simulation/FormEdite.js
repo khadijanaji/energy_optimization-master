@@ -6,8 +6,8 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 import Input from '@material-ui/core/Input';
+
 
 const styles = theme => ({
     root: {
@@ -47,13 +47,16 @@ function SimpleTable(props) {
     }
 
     return (
-            <Table>
+
+            <Table >
                 <TableHead>
+
                     <TableRow>
                         <TableCell></TableCell>
-                        <TableCell numeric>Valeur Actuelle</TableCell>
-                        <TableCell numeric>Entrer une valeur</TableCell>
+                        <TableCell numeric >Valeur Actuelle</TableCell>
+                        <TableCell numeric >Entrer une valeur</TableCell>
                     </TableRow>
+
                 </TableHead>
                 <TableBody>
                     {rows.map(row => {
@@ -79,6 +82,7 @@ function SimpleTable(props) {
 
                 </TableBody>
             </Table>
+
     );
 }
 
