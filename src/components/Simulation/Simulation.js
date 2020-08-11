@@ -20,6 +20,8 @@ type State = {
   current_debit_hp_recu: number,
   current_debit_mp: number,
   current_debit_mp_jph: number,
+  current_debit_dap_mp: number,
+  current_debit_pap: number,
   current_debit_soutirage_bp: number,
   current_debit_soutirage_mp: number,
   current_ouverture_pv004: number,
@@ -125,11 +127,14 @@ class Simulation extends Component<Props, State> {
 
 
     const data = [
+      this.state.current_debit_hp_recu,
       this.state.current_ouverture_pv004,
       this.state.current_ouverture_pv024,
       this.state.current_ouverture_pv044,
-      this.state.current_debit_soutirage_bp,
-      this.state.current_debit_soutirage_mp
+      this.state.current_debit_mp_jph,
+      this.state.current_debit_dap_mp,
+      this.state.current_debit_pap,
+      this.state.current_debit_bp_hrs,
     ];
 
     return (

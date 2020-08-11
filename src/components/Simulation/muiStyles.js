@@ -103,7 +103,7 @@ export const styles = () => ({
   "pos": {"marginBottom": "12"},
   "modalTitle": {
     "color": "#ffffff",
-    "background-color": "#c2c2c2",
+    "background-color": "#7ce1fe",
   },
   "modalFooter": {"background-color": "#f7f7f7"}
 });
