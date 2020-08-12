@@ -77,15 +77,13 @@ function SimpleTable(props) {
                             </TableCell>
                             <TableCell numeric>{props.dataInit[row.id - 1]} {row.measure}</TableCell>
                             <TableCell numeric>
-                                <Input type="number"6
+                                <Input type="number"
                                        name={row.idValue} id={row.idValue}
                                        placeholder="saisir une valeur"
                                        className={"formControl"}
                                        onChange={changeData}
-                                       inputProps={{
-                                           'max': '100',
-                                           'min': '0'
-                                       }}
+
+
 
 
 
