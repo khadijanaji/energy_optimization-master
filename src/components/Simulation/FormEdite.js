@@ -46,7 +46,12 @@ function SimpleTable(props) {
         const element = event.target;
         const name = element.name;
         const value = element.value;
+        //console.log("le max est ",event.target.max);
+        //console.log("le min est ",event.target.min);
+        console.log(element);
+        console.log("max ", element.getAttribute('max'));
         props.functionHandle(name, value);
+
     }
 
     return (
@@ -72,10 +77,19 @@ function SimpleTable(props) {
                             </TableCell>
                             <TableCell numeric>{props.dataInit[row.id - 1]} {row.measure}</TableCell>
                             <TableCell numeric>
-                                <Input type="number" name={row.idValue} id={row.idValue}
+                                <Input type="number"6
+                                       name={row.idValue} id={row.idValue}
                                        placeholder="saisir une valeur"
                                        className={"formControl"}
                                        onChange={changeData}
+                                       inputProps={{
+                                           'max': '100',
+                                           'min': '0'
+                                       }}
+
+
+
+
                                 />
                             </TableCell>
                         </TableRow>

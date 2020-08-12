@@ -9,81 +9,90 @@ import {styles} from "./muiStyles";
 import {withStyles} from "@material-ui/core";
 
 type Props = {
-  classes: any
+    classes: any
 }
 
 class BoiteDialogue extends Component<Props, State> {
-  constructor (props, context) {
-    super(props, context);
-    this.state = {
-      "open": false,
-      "data": {}
-    };
-    this.handleClickOpen = this.handleClickOpen.bind(this);
-    this.handleClose = this.handleClose.bind(this);
-    this.handleSubmitSimulateur = this.handleSubmitSimulateur.bind(this);
-  }
+    constructor (props, context) {
+        super(props, context);
+        this.state = {
+            "open": false,
+            "data": {}
+        };
+        this.handleClickOpen = this.handleClickOpen.bind(this);
+        this.handleClose = this.handleClose.bind(this);
+        this.handleSubmitSimulateur = this.handleSubmitSimulateur.bind(this);
+        this.handleClose1 = this.handleClose1.bind(this);
+    }
 
-  handleSubmitSimulateur (elementId, value) {
-    const data = this.state.data;
-    data[elementId] = value;
-    this.setState({data});
-  }
+    handleSubmitSimulateur (elementId, value) {
+        const data = this.state.data;
+        data[elementId] = value;
+        this.setState({data});
+    }
 
-  handleClickOpen () {
-    this.setState({"open": true});
-  }
+    handleClickOpen () {
+        this.setState({"open": true});
 
-  handleClose () {
-    this.props.functionHandle(this.state.data);
-    this.setState({"open": false});
-  }
+    }
+    handleClose1 () {
 
-  render () {
-    const {classes} = this.props;
-    return (
-      <div>
-        <Button
-          className={this.props.styleBtn}
-          onClick={this.handleClickOpen}
-        >Lancer Simulation</Button>
-        <Dialog
-            maxWidth='md'
-          aria-labelledby="form-dialog-title"
-          onClose={this.handleClose}
-          open={this.state.open}
-        >
-          <DialogTitle className={classes.modalTitle} id="form-dialog-title">Simulateur de production de l'energie Electrique</DialogTitle>
-          <DialogContent>
-            <FormEdite
-              dataInit={this.props.dataInit}
-              functionHandle={this.handleSubmitSimulateur}
-            />
+        this.props.functionHandle(this.state.data);
+        this.setState({"open": false});
+    }
 
-          </DialogContent>
-          <DialogActions className={classes.modalFooter}>
-            <Button
-                boxshadow={0}
-              className={"textPrimary"}
-              color="default"
-              onClick={this.handleClose}
-              variant="contained"
-            >
-              Annuler
-            </Button>
-            <Button
-                boxshadow={0}
-              color="primary"
-              onClick={this.handleClose}
-              variant="contained"
-            >
-              Lancer la simulation
-            </Button>
-          </DialogActions>
-        </Dialog>
-      </div>
-    );
-  }
+
+    handleClose () {
+
+        //this.props.functionHandle(this.state.data);
+        this.setState({"open": false});
+    }
+
+    render () {
+        const {classes} = this.props;
+        return (
+            <div>
+                <Button
+                    className={this.props.styleBtn}
+                    onClick={this.handleClickOpen}
+                >Lancer Simulation</Button>
+                <Dialog
+                    maxWidth='md'
+                    aria-labelledby="form-dialog-title"
+                    onClose={this.handleClose}
+                    open={this.state.open}
+                >
+                    <DialogTitle className={classes.modalTitle} id="form-dialog-title">Simulateur de production de l'energie Electrique</DialogTitle>
+                    <DialogContent>
+                        <FormEdite
+                            dataInit={this.props.dataInit}
+                            functionHandle={this.handleSubmitSimulateur}
+                        />
+
+                    </DialogContent>
+                    <DialogActions className={classes.modalFooter}>
+                        <Button
+                            boxshadow={0}
+                            className={"textPrimary"}
+                            color="default"
+                            onClick={this.handleClose}
+                            variant="contained"
+                        >
+                            Annuler
+                        </Button>
+                        <Button
+                            boxshadow={0}
+                            color="primary"
+                            onClick={this.handleClose1}
+                            variant="contained"
+                        >
+                            Lancer la simulation
+                        </Button>
+                    </DialogActions>
+                </Dialog>
+            </div>
+        );
+    }
 }
 
 export default withStyles(styles)(BoiteDialogue);
