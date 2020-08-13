@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -22,35 +22,68 @@ const styles = theme => ({
 
 let id = 0;
 
-function createData(name, measure, idValue) {
+function createData(name, measure, min, max, idValue) {
     id += 1;
-    return {id, name, measure, idValue};
+    return {id, name, measure, min, max, idValue};
 }
 
+const bigInt = 1000000;
+
 const rows = [
-    createData('debit actuel HP', "T/h", "current_debit_hp_recu"),
-    createData('ouverture pv004', "%", "current_ouverture_pv004"),
-    createData('ouverture pv024', "%", "current_ouverture_pv024"),
-    createData('ouverture pv044', "%", "current_ouverture_pv044"),
-    createData('current debit mp jph', "T/h", "current_debit_mp_jph"),
-    createData('current debit mp dap', "T/h", "current_debit_dap_mp"),
-    createData('current debit bp pap', "T/h", "current_debit_pap"),
-    createData('current debit bp hrs', "T/h", "current_debit_bp_hrs"),
+    createData('debit actuel HP', "T/h", 0, bigInt, "current_debit_hp_recu"),
+    createData('ouverture pv004', "%", 0, 100, "current_ouverture_pv004"),
+    createData('ouverture pv024', "%", 0, 100, "current_ouverture_pv024"),
+    createData('ouverture pv044', "%", 0, 100, "current_ouverture_pv044"),
+    createData('current debit mp jph', "T/h", -bigInt, bigInt, "current_debit_mp_jph"),
+    createData('current debit mp dap', "T/h", 0, bigInt, "current_debit_dap_mp"),
+    createData('current debit bp pap', "T/h", 0, bigInt, "current_debit_pap"),
+    createData('current debit bp hrs', "T/h", 0, bigInt, "current_debit_bp_hrs"),
 ];
 
 function SimpleTable(props) {
     const {classes} = props;
+    const stateInit = {
+        "current_debit_hp_recu": "",
+        "current_ouverture_pv004": "",
+        "current_ouverture_pv024": "",
+        "current_ouverture_pv044": "",
+        "current_debit_mp_jph": "",
+        "current_debit_dap_mp": "",
+        "current_debit_pap": "",
+        "current_debit_bp_hrs": "",
+    }
 
+    const [state, setState] = useState(stateInit);
 
     const changeData = (event) => {
-        const element = event.target;
-        const name = element.name;
-        const value = element.value;
-        //console.log("le max est ",event.target.max);
-        //console.log("le min est ",event.target.min);
-        console.log(element);
-        console.log("max ", element.getAttribute('max'));
-        props.functionHandle(name, value);
+        let element = event.target;
+        let name = element.name;
+        let value = +element.value;
+        let max = +element.max;
+        let min = +element.min;
+        setState(prev => {
+            console.log(prev);
+            if (value < min || value > max) {
+                console.log(`${value}<${min} or ${value}>${max}`)
+                return prev;
+            }
+            props.functionHandle(name, value);
+            return {
+                ...prev, [name]: value
+            }
+        });
+
+        /*        if (value >= min) {
+                    if (value < max) {
+                        props.functionHandle(name, value);
+                        console.log('successfully update');
+                    }else{
+                        console.log("failed update ", ` ${value} not less than ${max}`);
+                    }
+                } else {
+                    console.log("failed update ", ` ${value} not great than ${min}`);
+                }*/
+
 
     }
 
@@ -81,11 +114,10 @@ function SimpleTable(props) {
                                        name={row.idValue} id={row.idValue}
                                        placeholder="saisir une valeur"
                                        className={"formControl"}
+                                       style={{width: '150px'}}
                                        onChange={changeData}
-
-
-
-
+                                       inputProps={{'max': row.max, 'min': row.min}}
+                                       value={state[row.idValue]}
 
 
                                 />

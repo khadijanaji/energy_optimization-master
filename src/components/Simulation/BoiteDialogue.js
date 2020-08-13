@@ -57,10 +57,14 @@ class BoiteDialogue extends Component<Props, State> {
                     onClick={this.handleClickOpen}
                 >Lancer Simulation</Button>
                 <Dialog
-                    maxWidth='sm'
+
+                    maxWidth='md'
                     aria-labelledby="form-dialog-title"
                     onClose={this.handleClose}
                     open={this.state.open}
+
+
+
                 >
                     <DialogTitle className={classes.modalTitle} id="form-dialog-title">Simulateur de production de l'energie Electrique</DialogTitle>
                     <DialogContent>
